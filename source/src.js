@@ -1,7 +1,7 @@
 const express=require("express");
 const app=express();
 const path=require("path");
-
+const port=process.env.PORT || 4717
 const combo=require("../backend/combo")
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -22,4 +22,4 @@ app.get("",(req,res)=>{
 
 app.get("/weather",combo)
 
-app.listen(4717);
+app.listen(port);
