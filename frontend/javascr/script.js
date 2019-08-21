@@ -1,5 +1,3 @@
-console.log("hii")
-
 const prob = document.querySelector("form");
 const  search= document.querySelector("input");
 const mesg1=document.querySelector("#msg1");
